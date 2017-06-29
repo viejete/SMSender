@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="addClientPane" prefHeight="800.0" prefWidth="1200.0" stylesheets="@../style/background.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerAddClient">
+      <TextField fx:id="textNombre" layoutX="301.0" layoutY="340.0" promptText="Nombre..." />
+      <TextField fx:id="textApellido" layoutX="497.0" layoutY="340.0" promptText="Apellido..." />
+      <TextField fx:id="textDNI" layoutX="691.0" layoutY="340.0" promptText="DNI..." />
+      <TextField fx:id="textTelefono" layoutX="301.0" layoutY="400.0" promptText="Telefono..." />
+      <TextField fx:id="textDireccion" layoutX="497.0" layoutY="400.0" promptText="Direccion..." />
+      <TextField fx:id="textEmail" layoutX="691.0" layoutY="400.0" promptText="Email..." />
+      <RadioButton fx:id="femaleButton" layoutX="517.0" layoutY="444.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="32.0" text="F" />
+      <RadioButton fx:id="maleButton" layoutX="583.0" layoutY="444.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="36.0" text="M" />
+      <Button fx:id="buttonAddClient" layoutX="542.0" layoutY="493.0" mnemonicParsing="false" onAction="#clickAddClient" prefHeight="0.0" prefWidth="59.0" text="Agregar" />
+    <ImageView fx:id="arrowReturn" fitHeight="48.0" fitWidth="51.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#returnClicked" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../images/arrowReturn.png" />
+        </image>
+    </ImageView>
+   <Text layoutX="470.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AÑADIR CLIENTE">
+      <font>
+         <Font name="Arial Bold" size="24.0" />
+      </font>
+   </Text>
+   <Text layoutX="7.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Volver al buscador" textAlignment="CENTER" wrappingWidth="76.99999835528433">
+      <font>
+         <Font name="System Bold" size="16.0" />
+      </font>
+   </Text>
+</AnchorPane>
