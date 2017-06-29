@@ -18,11 +18,9 @@
       <TextField fx:id="textEmail" layoutX="691.0" layoutY="400.0" promptText="Email..." />
       <RadioButton fx:id="femaleButton" layoutX="517.0" layoutY="444.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="32.0" text="F" />
       <RadioButton fx:id="maleButton" layoutX="583.0" layoutY="444.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="36.0" text="M" />
-      <Button fx:id="buttonAddClient" layoutX="542.0" layoutY="493.0" mnemonicParsing="false" onAction="#clickAddClient" prefHeight="0.0" prefWidth="59.0" text="Agregar" />
-    <ImageView fx:id="arrowReturn" fitHeight="48.0" fitWidth="51.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#returnClicked" pickOnBounds="true" preserveRatio="true">
-        <image>
+      <Button layoutX="542.0" layoutY="493.0" mnemonicParsing="false" onAction="#clickAddClient" prefHeight="0.0" prefWidth="59.0" text="Agregar" />
+    <ImageView fitHeight="48.0" fitWidth="51.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#returnClicked" pickOnBounds="true" preserveRatio="true">
             <Image url="@../images/arrowReturn.png" />
-        </image>
     </ImageView>
    <Text layoutX="470.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AÑADIR CLIENTE">
       <font>

@@ -10,30 +10,26 @@
 <?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="Infinity" maxWidth="Infinity" prefHeight="800.0" prefWidth="1200.0" stylesheets="@../style/background.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
-   <children>
       <TextField fx:id="numberTextSearch" layoutX="824.0" layoutY="337.0" promptText="Número..." />
       <Button fx:id="buttonSearcher" layoutX="838.0" layoutY="385.0" mnemonicParsing="false" onAction="#buttonSearcherClicked" text="Buscar por num.">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <ImageView fx:id="imageButtonScroll" fitHeight="48.0" fitWidth="51.0" layoutX="1138.0" layoutY="14.0" onMouseClicked="#imageButtonClicked" pickOnBounds="true" preserveRatio="true">
-         <image>
+      <ImageView fitHeight="48.0" fitWidth="51.0" layoutX="1138.0" layoutY="14.0" onMouseClicked="#imageButtonClicked" pickOnBounds="true" preserveRatio="true">
             <Image url="@../images/arrow.png" />
-         </image>
       </ImageView>
-      <Text fx:id="titleTextSearch" layoutX="525.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BUSCADOR">
+      <Text layoutX="525.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BUSCADOR">
          <font>
             <Font name="Arial Bold" size="24.0" />
          </font>
       </Text>
       <ListView fx:id="lvClients" layoutY="495.0" onMouseClicked="#onListViewClicked" prefHeight="305.0" prefWidth="1200.0" />
       <TextField fx:id="textApellido" layoutX="148.0" layoutY="337.0" promptText="Apellido..." />
-      <Button fx:id="buttonSearchApellido" layoutX="163.0" layoutY="388.0" mnemonicParsing="false" onAction="#buttonApellidoClicked" text="Buscar por apellido" />
+      <Button layoutX="163.0" layoutY="388.0" mnemonicParsing="false" onAction="#buttonApellidoClicked" text="Buscar por apellido" />
       <Text layoutX="1117.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Añadir cliente" textAlignment="CENTER" wrappingWidth="89.95703125">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
       </Text>
-   </children>
 </AnchorPane>

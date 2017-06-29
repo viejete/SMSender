@@ -18,7 +18,7 @@ import java.util.ArrayList;
 public class Controller {
 
     private ArrayList<Client> clients;
-    DAO dao;
+    private DAO dao;
 
     // Buscador layout
     @FXML

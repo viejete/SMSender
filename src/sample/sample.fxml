@@ -14,14 +14,10 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <TabPane prefHeight="800.0" prefWidth="1200.0" stylesheets="@../style/background.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerMain">
-   <tabs>
       <Tab text="Main">
-         <content>
-            <Pane fx:id="mainPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="600.0">
-               <children>
-                  <Button fx:id="buttonSend" layoutX="701.0" layoutY="548.0" mnemonicParsing="false" onAction="#sendClicked" text="Enviar">
+            <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="600.0">
+                  <Button layoutX="701.0" layoutY="548.0" mnemonicParsing="false" onAction="#sendClicked" text="Enviar">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -30,9 +26,7 @@
                   <TextField fx:id="numberTextField" layoutX="656.0" layoutY="245.0" promptText="Número..." />
                   <ListView fx:id="lvPredefinidos" layoutY="164.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#predefinidosClick" prefHeight="608.0" prefWidth="391.0" />
                   <ImageView id="arrowMain" fitHeight="58.0" fitWidth="51.0" layoutX="1135.0" layoutY="15.0" onMouseClicked="#returnClicked" pickOnBounds="true" preserveRatio="true">
-                     <image>
                         <Image url="@../images/return_main_arrow.png" />
-                     </image>
                   </ImageView>
                   <Label layoutX="1136.0" layoutY="78.0" text="Volver al " />
                   <Label layoutX="1136.0" layoutY="92.0" text="buscador" />
@@ -41,18 +35,17 @@
                         <Font name="Arial Bold" size="25.0" />
                      </font>
                   </Text>
-               </children>
+                  <ImageView fitHeight="44.0" fitWidth="41.0" layoutX="350.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../images/add_pref.png" />
+                  </ImageView>
+                  <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="14.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../images/del_pref.png" />
+                  </ImageView>
             </Pane>
-         </content>
       </Tab>
-      <Tab fx:id="tabHistorial" onSelectionChanged="#historialClicked" text="Historial">
-        <content>
+      <Tab onSelectionChanged="#historialClicked" text="Historial">
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-               <children>
                   <ListView fx:id="lvHistorial" layoutX="1.0" layoutY="-1.0" prefHeight="373.0" prefWidth="600.0" />
-               </children>
             </AnchorPane>
-        </content>
       </Tab>
-   </tabs>
 </TabPane>

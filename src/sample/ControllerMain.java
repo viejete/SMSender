@@ -71,7 +71,7 @@ public class ControllerMain {
 
             Twilio.init(accountSid, authToken);
 
-            Message message = Message.creator(new PhoneNumber(number), new PhoneNumber("+34988057143"), body).create();
+            Message.creator(new PhoneNumber(number), new PhoneNumber("+34988057143"), body).create();
 
             Client cliente = null;
             try {
@@ -179,18 +179,25 @@ public class ControllerMain {
             authToken = decrypted.split(",")[1];
 
         } catch (FileNotFoundException e) {
+            System.err.println("File not found!");
             e.printStackTrace();
         } catch (IOException e) {
+            System.err.println("IOException!");
             e.printStackTrace();
         } catch (NoSuchPaddingException e) {
+            System.err.println("No such padding!");
             e.printStackTrace();
         } catch (NoSuchAlgorithmException e) {
+            System.err.println("That algorithm does not exists!");
             e.printStackTrace();
         } catch (InvalidKeyException e) {
+            System.err.println("Invalid key!");
             e.printStackTrace();
         } catch (BadPaddingException e) {
+            System.err.println("Bad padding???");
             e.printStackTrace();
         } catch (IllegalBlockSizeException e) {
+            System.err.println("Illegal block size!");
             e.printStackTrace();
         }
     }
