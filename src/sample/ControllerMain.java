@@ -71,7 +71,7 @@ public class ControllerMain {
 
             Twilio.init(accountSid, authToken);
 
-            Message.creator(new PhoneNumber(number), new PhoneNumber("+34988057143"), body).create();
+            Message.creator(new PhoneNumber("34" + number), new PhoneNumber("ED ABOGADOS"), body).create();
 
             Client cliente = null;
             try {
